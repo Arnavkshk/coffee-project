@@ -1,48 +1,27 @@
-import React from 'react'
-import { Link } from "react-router-dom";
+import React, { Component } from 'react'
+import './style.css'
 
 
-const Navbar = () => {
-  return (
-    <>
-      <nav class="navbar navbar-expand-lg bg-body-tertiary">
-    <div class="container-fluid">
-      <Link class="navbar-brand" href="#">COFFEE TIME</Link>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <Link className="nav-link active" aria-current="page" href="#">Home</Link>
-          </li>
-          <li class="nav-item">
-            <Link className="nav-link" href="#">Link</Link>
-          </li>
-          <li class="nav-item dropdown">
-            <Link className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Dropdown
-            </Link>
-            <ul class="dropdown-menu">
-              <li><Link className="dropdown-item" href="#">Action</Link></li>
-              <li><Link className="dropdown-item" href="#">Another action</Link></li>
-              <li><hr class="dropdown-divider"/></li>
-              <li><Link className="dropdown-item" href="#">Something else here</Link></li>
+export class Navbar extends Component {
+  render(){
+    return(
+      <div className='top'>
+        <nav className="navbar navbar-expand-lg ">
+        <div className="container-fluid">
+            <a className="navbar-brand" href="/">COFFEE TIME</a>
+            <div className="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul className="navbar-nav  ">
+                <a className="nav-link" aria-current="page" href="/">Home</a>  
+                <li className="nav-item"><a className="nav-link" href="/business">Gallery</a></li>
+                <li className="nav-item"><a className="nav-link" href="/price-for-sercice">Price for service</a></li>
+                <li className="nav-item"><a className="nav-link" href="/Sign-up">sign-up</a></li>
+                <li className="nav-item"><a className="nav-link" href="/Login">Login</a></li>
             </ul>
-          </li>
-          <li class="nav-item">
-            <Link className="nav-link disabled" aria-disabled="true">Disabled</Link>
-          </li>
-        </ul>
-        <form class="d-flex" role="search">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
-          <button class="btn btn-outline-success" type="submit">Search</button>
-        </form>
+            </div>
+        </div>
+        </nav>
       </div>
-    </div>
-  </nav>
-    </>
-  )
+    )
+  }
 }
-
-export default Navbar;
+export default Navbar
