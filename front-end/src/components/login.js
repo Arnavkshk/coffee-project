@@ -1,19 +1,17 @@
 import React from "react";
 import image1 from "../assets/WhatsApp Image 2023-08-27 at 00.40.27.jpg";
+import google from "../assets/google logo.jpg";
+import facebook from "../assets/Group (1).jpg";
 function login() {
   return (
     <div className="relative">
       <div className="">
-      <img
-            className="h-screen w-screen"
-            src={image1}
-            alt=""
-          />
+        <img className="h-screen w-screen" src={image1} alt="" />
       </div>
 
-      <div className=" absolute border border-white bg-white h-max w-max	 grid place-items-center top-20 right-20">
+      <div className=" absolute border border-white rounded-lg bg-white h-max w-max	 grid place-items-center top-20 right-20">
         <divc className="my-0">
-          <h1 className="font-bold text-4xl m-2 grid place-items-center my-4 text-amber-700">
+          <h1 className="font-bold text-4xl m-2 grid place-items-center my-2 text-amber-700">
             COFEE TIME
           </h1>
         </divc>
@@ -29,31 +27,36 @@ function login() {
             type="password"
             placeholder="Password"
           />
+          <p className="text-xs my-1 pl-40 ">Forget Password?</p>
         </div>
-        <div className="flex ml-10 w-64  space-x-2 text-black items-center">
-              <input
-                className="rounded-[7px] py-4"
-                type="checkbox"
-                class="default:ring-2 ..."
-              />
-              <p className="text-black">
-                Agree with
-                <span className="underline text-black">Terms and Conditions</span>
-              </p>
-            </div>
-            <div className="flex justify-center items-center mt-4">
-              <button className="rounded-[6px] h-10 w-60 bg-amber-800 text-green-900">
-                login
-              </button>
-            </div>
-            <div className="flex ">
-               <div className="border-1 border-black w-60"></div>
-               
-               {/* <div className="border-1 border-black w-25"></div> */}
-            </div>
-            <div>
-              
-            </div>
+
+        <div className="flex justify-center items-center mt-3 my-2">
+          <button className="rounded-[6px] h-10 w-60 bg-amber-800 text-green-900">
+            login
+          </button>
+        </div>
+        <div className="flex my-4 relative justify-center items-center">
+          <div className="border-1 border-black w-60 h-0 -z-1"></div>
+          <p className="text-sm absolute z-0">Or Sign up with</p>
+        </div>
+        <div className="flex items-center space-x-4">
+          <div className="border-2 border-white flex justify-center items-center shadow-md h-12 w-20 m-2">
+            <img
+              className=" h-8 w-8 border-2 rounded-lg border-white "
+              src={google}
+              alt=""
+              srcset=""
+            />
+          </div>
+          <div className="border-2 border-white flex  justify-center items-center h-12 w-20 shadow-md">
+            <img
+              className="h-8 w-8 border-2 rounded-lg border-white"
+              src={facebook}
+              alt=""
+              srcset=""
+            />
+          </div>
+        </div>
       </div>
     </div>
   );
