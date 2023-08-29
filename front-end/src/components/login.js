@@ -18,9 +18,9 @@ function login() {
           </h1>
         </divc>
 
-        <div className="block flex flex-col space-y-6 m-10 w-">
+        <div className="block flex flex-col space-y-6 m-6 w-64">
           <input
-            className="border border-black p-1 w-max rounded-[7px] px-3 py-2 font-sans text-base"
+            className="border border-black p-1  rounded-[7px] px-3 py-2 font-sans text-base"
             type="text"
             placeholder="Email"
           />
@@ -30,21 +30,29 @@ function login() {
             placeholder="Password"
           />
         </div>
-        <div className="flex ml-10  space-x-2 text-black items-center">
+        <div className="flex ml-10 w-64  space-x-2 text-black items-center">
               <input
-                className="rounded-[7px] py-4 w-10"
+                className="rounded-[7px] py-4"
                 type="checkbox"
                 class="default:ring-2 ..."
               />
               <p className="text-black">
                 Agree with
-                <span className="underline px-1 text-black">Terms and Conditions</span>
+                <span className="underline text-black">Terms and Conditions</span>
               </p>
             </div>
             <div className="flex justify-center items-center mt-4">
-              <button className="rounded-[6px] h-10 w-12 bg-orange-600">
+              <button className="rounded-[6px] h-10 w-60 bg-amber-800 text-green-900">
                 login
               </button>
+            </div>
+            <div className="flex ">
+               <div className="border-1 border-black w-60"></div>
+               
+               {/* <div className="border-1 border-black w-25"></div> */}
+            </div>
+            <div>
+              
             </div>
       </div>
     </div>
