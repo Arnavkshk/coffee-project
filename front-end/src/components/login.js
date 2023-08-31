@@ -36,7 +36,7 @@ function login() {
           </button>
         </div>
         <div className="flex my-4 relative justify-center items-center">
-          <div className="border-1 border-black w-60 h-0 -z-1"></div>
+          <div className="border-1 border-black w-60 h-0 -z-6"></div>
           <p className="text-sm absolute z-0">Or Sign up with</p>
         </div>
         <div className="flex items-center space-x-4">
