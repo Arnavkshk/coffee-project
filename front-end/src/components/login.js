@@ -31,15 +31,16 @@ function login() {
         </div>
 
         <div className="flex justify-center items-center mt-3 my-2">
-          <button className="rounded-[6px] h-10 w-60 bg-amber-800 text-green-900">
-            login
+          <button className="rounded-[6px] h-10 w-60 bg-amber-700 font-bold text-green-900">
+            Login
           </button>
         </div>
-        <div className="flex my-4 relative justify-center items-center">
-          <div className="border-1 border-black w-60 h-0 -z-6"></div>
-          <p className="text-sm absolute z-0">Or Sign up with</p>
+        <div className="flex my-4 relative justify-center items-center h-4 w-full">
+          <div className="border-1 border-black w-24"></div>
+          <p className="text-sm absolute z-10"><span className="bg-white text-xs">Or Sign up with</span></p>
+          <div className="border-1 border-black w-24"></div>
         </div>
-        <div className="flex items-center space-x-4">
+        <div className=" flex justify-center items-center space-x-4">
           <div className="border-2 border-white flex justify-center items-center shadow-md h-12 w-20 m-2">
             <img
               className=" h-8 w-8 border-2 rounded-lg border-white "
@@ -48,7 +49,7 @@ function login() {
               srcset=""
             />
           </div>
-          <div className="border-2 border-white flex  justify-center items-center h-12 w-20 shadow-md">
+          <div className="border-2 border-white flex justify-center items-center h-12 w-20 shadow-md m-2">
             <img
               className="h-8 w-8 border-2 rounded-lg border-white"
               src={facebook}
