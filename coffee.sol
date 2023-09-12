@@ -14,6 +14,7 @@ contract CoffeeShop {
     }
 
     struct Cart {
+
         mapping(uint256 => uint256) itemQuantities;
         uint256 itemCount;
     }
